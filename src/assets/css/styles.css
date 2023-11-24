@@ -59,3 +59,19 @@ body {
         transform: rotateX(2160deg);
     }
 }
+
+.stats {
+    display: flex;
+    border-radius: 10px;
+    color:beige;
+    font-weight: 500;
+    padding: 20px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(2, 49, 88, 0.25);
+}
+
+.stats p:nth-last-child(1){
+    margin-left: 50%;
+    
+}
