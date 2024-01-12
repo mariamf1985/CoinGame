@@ -8,6 +8,10 @@
   </head>
   <body>
     <div class="container">
+      <div class="stats">
+        <p id="headsCount">Heads: 0</p>
+        <p id="tailsCount">Tails: 0</p>
+      </div>
       <div class="coin" id="coin">
         <div class="heads">
           <img src="./src/assets/img/Head.png" />
@@ -16,9 +20,9 @@
           <img src="./src/assets/img/Tails.png" />
         </div>
       </div>
-      <div class="stats">
-        <p id="headsCount">Heads: 0</p>
-        <p id="tailsCount">Tails: 0</p>
+      <div class="buttons">
+        <button onclick="girarMoneda()">Girar Moneda</button>
+        <button onclick="reiniciarJuego()">Reiniciar Juego</button>
       </div>
     </div>
   </body>
