@@ -3,27 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coin Game</title>
-    <link rel="stylesheet" href="./src/assets/css/styles.css" type="text/css" />
+    <title>Heads & Tails</title>
+    <link rel="stylesheet" href="./src/assets/css/styles.css" />
   </head>
+
   <body>
-    <div class="container">
-      <div class="stats">
-        <p id="headsCount">Heads: 0</p>
-        <p id="tailsCount">Tails: 0</p>
-      </div>
-      <div class="coin" id="coin">
-        <div class="heads">
-          <img src="./src/assets/img/Head.png" />
+    <main>
+      <section id="container_game">
+        <h1>Juego de la Moneda JS</h1>
+
+        <div id="container_count">
+          <h2>Resultados</h2>
+          <div id="coin_results">
+            <p id="count_heads">Cara: 0</p>
+            <p id="count_tails">Cruz: 0</p>
+          </div>
         </div>
-        <div class="tails">
-          <img src="./src/assets/img/Tails.png" />
+
+        <div class="container_result_coin">
+          <p>Ha salido: <span id="result_coin"></span></p>
         </div>
-      </div>
-      <div class="buttons">
-        <button onclick="girarMoneda()">Girar Moneda</button>
-        <button onclick="reiniciarJuego()">Reiniciar Juego</button>
-      </div>
-    </div>
+
+        <div id="container_coin">
+          <div id="main_coin" class="coins">
+            <img src="./src/assets/img/Head.png" alt="Main Coin" />
+          </div>
+          <div id="heads" class="coins">
+            <img src="./src/assets/img/Head.png" alt="Heads" />
+          </div>
+          <div id="tails" class="coins">
+            <img src="./src/assets/img/Tails.png" alt="Tails" />
+          </div>
+        </div>
+
+        <div class="container_result_coin">
+          <p>Ha salido: <span id="result_coin"></span></p>
+        </div>
+
+        <div id="container_count">
+          <h2>Resultados</h2>
+          <div id="coin_results">
+            <p id="count_heads">Heads: 0</p>
+            <p id="count_tails">Tails: 0</p>
+          </div>
+        </div>
+
+        <div id="container_buttons">
+          <button id="flip_btn">FLIP COIN</button>
+          <button id="reset_btn">RESET</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/assets/js/coinGame.js"></script>
   </body>
 </html>
