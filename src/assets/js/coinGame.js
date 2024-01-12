@@ -11,11 +11,11 @@ let headCount = 0;
 let tailCount = 0;
 
 function updateCounts(){
-    headCountElement.textContent = `Cara: ${headCount}`;
-    tailCountElement.textContent = `Cruz: ${tailCount}`;
+    headCountElement.textContent = `Heads: ${headCount}`;
+    tailCountElement.textContent = `Tails: ${tailCount}`;
 }
 
-function lanzarMoneda() {
+function flipCoin() {
     headImage.style.display = "none";
     tailImage.style.display = "none";
     mainCoin.style.display = "none";
@@ -24,14 +24,14 @@ function lanzarMoneda() {
         const result = Math.round(Math.random()) + 1;
         if (result == 1) {
             headCount += 1;
-            resultCoin.textContent = "Cara ⭐";
+            resultCoin.textContent = "Heads ⭐";
             requestAnimationFrame(() => {
                 headImage.style.display = "block";
 
             });
         } else {
             tailCount += 1;
-            resultCoin.textContent = "Cruz 💲";
+            resultCoin.textContent = "Tails 💲";
             requestAnimationFrame(() => {
                 tailImage.style.display = "block";
             });
@@ -54,5 +54,5 @@ function resetCount(){
 
 }
 
-flipBtn.addEventListener("click", lanzarMoneda);
+flipBtn.addEventListener("click", flipCoin);
 resetBtn.addEventListener("click", resetCount);
